@@ -1,0 +1,101 @@
+.header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header {
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+}
+
+body {
+  color: #000;
+}
+
+.phone_title {
+  width: 500px;
+}
+
+body.is_dark .phone_title {
+  color: white;
+}
+
+.phone img {
+  display: block;
+}
+
+
+
+
+
+/* custom properties */
+
+/* custom media queries */
+
+/* some var() & calc() */
+body {
+color: #12345678;
+
+font-size: 1rem;
+line-height: 1.5rem;
+padding: calc(0.5rem + 1px);
+}
+
+/* custom media query usage */
+
+/* custom selectors */
+h1, h2, h3, h4, h5, h6 { margin-top: 0 }
+
+/* colors stuff */
+a {
+color: hwb(190, 35%, 20%);
+-webkit-transition: color 1s;
+transition: color 1s; /* autoprefixed ! */
+}
+a:hover { color: gray(255, 50%) }
+a:active { color: rebeccapurple }
+a:any-link { color: rgb(89, 142, 153) }
+
+/* font stuff */
+h2 {
+font-variant-caps: small-caps;
+}
+
+table {
+font-variant-numeric: lining-nums;
+}
+
+/* filters */
+.blur {
+-webkit-filter: blur(4px);
+        filter: blur(4px);
+}
+.sepia {
+-webkit-filter: sepia(.8);
+        filter: sepia(.8);
+}
+.foo.bar, .foo.baz {
+  margin-top: 16px;
+}
+@media (max-width: 500px) {
+
+  .phone_title {
+    width: auto;
+  }
+}
+@media (max-width: 50rem) {
+
+  body {
+    font-size: 1.2rem;
+  }
+}
+    
+    
+    
+    
+    
+    
+    
+    
